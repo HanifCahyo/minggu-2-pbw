@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+    </style>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div
+      style="
+        background-color: #013372;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+      "
+    >
+      <div>
+        <h1
+          style="
+            margin: 0px;
+            padding: 20px;
+            color: #ebecff;
+            padding-bottom: 5px;
+          "
+        >
+          Hanif Cahyo Prasetyo
+        </h1>
+        <p
+          style="
+            margin: 0px;
+            text-align: left;
+            padding-left: 20px;
+            color: #ebecff;
+            font-size: 18px;
+          "
+        >
+          A11.2022.14075
+        </p>
+      </div>
+      
+    </div>
+    
+      
+      <div style="display: flex">
+        <figure id="videoContainer" data-fullscreen="false">
+          <video id="video" controls preload="metadata">
+            <source src="video/y2mate.com - MV IU아이유  eight에잇 ProdFeat SUGA of BTS_1080p.mp4" type="video/mp4">
+            <track label="English" kind="subtitles" srclang="en" src="subtitles/vtt/sub-en.vtt" default>
+          </video>
+        </figure>
+      </div>
+
+      <div style="margin-top: 50px; text-align: center">
+        
+        <hr width="400px" color=" #013372" style="margin-bottom: 100px" />
+       
+      </div>
+    </div>
+    
+    <div
+      style="background-color: #013372; padding: 60px; margin-top: -50px"
+    ></div>
+  </body>
+</html>
