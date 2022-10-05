@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <button onclick="myFunction()" type="button">Get video length</button>
+    <button onclick="playPause()">Play/Pause</button>
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeNormal()">Normal</button>
+    <button onclick="enableLoop()" type="button">Enable loop</button>
+    <button onclick="disableLoop()" type="button">Disable loop</button>
+    <button onclick="checkLoop()" type="button">Check loop status</button>
+    <button onclick="enableControls()" type="button">Enable controls</button>
+    <button onclick="disableControls()" type="button">Disable controls</button>
+    <button onclick="checkControls()" type="button">Check controls status</button>
+    <br>
+
+    <video id="myVideo" width="320" height="176" controls>
+        <source src="file-video.mp4" type="video/mp4">
+    </video>
+
+    
+    <script>
+        var vid = document.getElementById("myVideo");
+
+        function playPause() {
+            if (myVideo.paused)
+                myVideo.play();
+            else
+                myVideo.pause();
+        }
+
+        function makeBig() {
+            myVideo.width = 560;
+        }
+
+        function makeSmall() {
+            myVideo.width = 320;
+        }
+
+        function makeNormal() {
+            myVideo.width = 420;
+        }
+        function myFunction() {
+            alert(vid.duration);
+        }
+
+        function enableLoop() {
+            vid.loop = true;
+            vid.load();
+        }
+
+        function disableLoop() {
+            vid.loop = false;
+            vid.load();
+        }
+
+        function checkLoop() {
+            alert(vid.loop);
+        }
+        function enableControls() {
+            vid.controls = true;
+            vid.load();
+        }
+
+        function disableControls() {
+            vid.controls = false;
+            vid.load();
+        }
+
+        function checkControls() {
+            alert(vid.controls);
+        } 
+    </script>
+
+
+
+</body>
+
+</html>
